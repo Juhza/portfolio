@@ -215,7 +215,7 @@ a, button {
 #contact form div:last-child {
     display: flex;
     justify-content: center;
-    margin-top: 60px;
+    margin: 60px 0 0 0;
 }
 
 #contact button {
