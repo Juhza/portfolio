@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Raleway&display=swap');
+
+:root {
+    --background: #1A0F26;
+    --font: #F2F2F2;
+    --link: #F244C4;
+    --hover: #1DCBF2;
+    --comment: #555555;
+    --highlight: #C522F2;
+    --active-hover: #05F2DB;
+    --button: #F2BD1D;
+}
+
+body {
+    color: var(--font);
+    background-color: var(--background);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    text-shadow: 1px 1px 2px var(--link);
+}
+
+a, a:hover {
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+p {
+    margin: 0;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+#menus {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 0;
+}
+
+#menus #contentItems {
+    background-color: var(--link);
+    font-family: 'Lato', sans-serif;
+}
+
+#menus #contentItems a {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--link);
+    text-transform: lowercase;
+    letter-spacing: 0.3em;
+    color: var(--font);
+}
+
+#menus #contentItems a:hover {
+    background-color: var(--hover);
+}
+
+#menus #socialMedia, #menus #contentItems {
+    display: flex;
+    flex-direction: column;
+}
+
+#menus #socialMedia a {
+    color: var(--font);
+    padding: 20px;
+    text-align: center;
+}
+
+#menus #socialMedia a:hover {
+    background-color: var(--hover);
+}
+
+#wrapper {
+    padding: 60px 50px 0 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#content {
+    width: 55vw;
+    padding: 40px 30px 0 30px;
+    z-index: 2;
+}
+
+#home, #work, #about, #contact {
+    margin: 60px 0;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#home > h1, #work > h1, #about > h1, #contact > h1 {
+    margin-bottom: 40px;
+}
+
+#home > p {
+    margin-bottom: 20px;
+}
+
+#home div, #work div, #about div, #contact div {
+    margin-bottom: 5px;
+}
+
+#home .imageWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#home .imageWrapper .image {
+    background-image: url(../photo.jpg);
+    z-index: 2;
+}
+
+#home .imageWrapper .decoration-yellow {
+    background-color: var(--button);
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    z-index: 0;
+}
+
+#home .imageWrapper .decoration-pink {
+    background-color: var(--link);
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -10px;
+    z-index: 1;
+}
+
+#home .imageWrapper .image, #home .imageWrapper .decoration-pink, #home .imageWrapper .decoration-yellow {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+#about h3 {
+    margin-bottom: 10px;
+}
+
+.about-items {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.comment {
+    color: var(--comment);
+}
+
+.invisible {
+    display: none !important;
+}
+
+.experience p span {
+    color: var(--link);
+    font-family: 'Lato', sans-serif;
+}
+
+.languages p span {
+    font-style: italic;
+    font-weight: 700;
+    color: var(--hover);
+    font-family: 'Lato', sans-serif;
+    padding-right: 5px;
+}
+
+#contact form div {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact form div input, #contact form div textarea {
+    border: 0px;
+    border-bottom: 5px solid var(--highlight);
+    padding: 10px 20px;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+#contact form div input {
+    width: 45%;
+}
+
+#contact form div textarea {
+    resize: none;
+    width: 100%;
+}
+
+#contact form div textarea:active, #contact form div textarea:focus, #contact form div input:active, #contact form div input:focus {
+    outline: none;
+    border-color: var(--active-hover);
+}
+
+#contact form div {
+    margin-bottom: 25px;
+}
+
+#contact form div:last-child {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+#contact button {
+    padding: 15px 40px;
+    font-family: inherit;
+    text-transform: uppercase;
+    letter-spacing: 0.5;
+    border: 0;
+    border-radius: 0;
+    color: var(--font);
+    background-color: var(--button);
+    box-shadow: 4px 4px 0 0 var(--highlight);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#contact button:hover, #contact button:active, #contact button:focus {
+    background-color: var(--active-hover);
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    padding: 60px 0 30px 0;
+    align-self: flex-end;
+}

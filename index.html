@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="libs/node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <script src="js/script.js"></script>
+    <title>JULIA B.</title>
+</head>
+<body>
+    <div id="menus">
+        <div id="contentItems">
+            <a onclick="toggleDisplay('home')">
+                Home
+            </a>
+            <a onclick="toggleDisplay('work')">
+                Work
+            </a>
+            <a onclick="toggleDisplay('about')">
+                About
+            </a>
+            <a onclick="toggleDisplay('contact')">
+                Contact
+            </a>
+        </div>
+
+        <div id="footer">
+            <p class="comment">// 2021. All rights reserved.</p>
+        </div>
+
+        <div id="socialMedia">
+            <a href="https://www.instagram.com/juubza/" target="_blank">
+                <i class="fab fa-instagram fa-lg"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-twitter fa-lg"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jubza/" target="_blank">
+                <i class="fab fa-linkedin-in fa-lg"></i>
+            </a>
+            <a href="https://github.com/Juhza" target="_blank">
+                <i class="fab fa-github-alt fa-lg"></i>
+            </a>
+        </div>
+    </div>
+
+    <div id="wrapper">
+        <div id="content">
+            
+            <div id="home">
+                <div class="imageWrapper">
+                    <div class="image"></div>
+                    <div class="decoration-pink"></div>
+                    <div class="decoration-yellow"></div>
+                </div>
+                
+                <div>
+                    <h1>hiya! I'm Julia.</h1>
+                </div>
+
+                <p>
+                    Fullstack developer from Santa Catarina, Brazil.
+                    I like to learn new design patterns and apply them whenever possible.
+                    My favorite thing about programming is making code a little bit better everytime I go through it, especially in legacy codes.
+                </p>
+                <p>
+                    Also, I try to live by LeBlanc's Law. But, you know, not always possible.
+                </p>
+            </div>
+
+            <div id="work" class="invisible">
+                <h1>work (work work work work work)</h1>
+
+                <div>
+                    <p>
+                        Due to my indecision and lack of commitment when it comes to personal projects, there's nothing here yet.
+                    </p>
+                    <p>
+                        But hey, show up here sometime in the future! Who knows.
+                    </p>
+                </div>
+            </div>
+
+            <div id="about" class="invisible">
+                <h1>yours truly</h1>
+
+                <div>
+                    <h3>hard skills</h3>
+
+                    <div class="about-items">
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>JavaScript</p>
+                        <p>jQuery</p>
+                        <p>C#</p>
+                        <p>Node.js</p>
+                        <p>PHP</p>
+                        <p>MySQL</p>
+                        <p>xunit</p>
+                        <p>Git</p>
+                        <p>Bootstrap</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>experience</h3>
+                    
+                    <div class="about-items experience">
+                        <div>
+                            <p>Fullstack developer</p>
+                            <p><span>@</span> Qualyteam</p>
+                            <p>2019 - now</p>
+                        </div>
+
+                        <div>
+                            <p>Web developer intern</p>
+                            <p><span>@</span> FineMult Comunicações</p>
+                            <p>2019 - 2019</p>
+                        </div>
+
+                        <div>
+                            <p>Customer support</p>
+                            <p><span>@</span> DataClick</p>
+                            <p>2017 - 2019</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>languages</h3>
+                    
+                    <div class="about-items languages">
+                        <div>
+                            <p class="comment">// fluent</p>
+                            <p><span>pt-BR</span> Português</p>
+                        </div>
+
+                        <div>
+                            <p class="comment">// intermediate</p>
+                            <p><span>en-US</span> English</p>
+                        </div>
+
+                        <div>
+                            <p class="comment">// basic</p>
+                            <p><span>fr-FR</span> Français</p>
+                            <p><span>es-ES</span> Español</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>also busy with</h3>
+                    
+                    <div class="about-items">
+                        <p>Losing my chair to my cat</p>
+                        <p>Gacha games</p>
+                        <p>Neverending personal projects</p>
+                        <p>Not going crazy during quarentine</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact" class="invisible">
+                <h1>message in a bottle, yeah</h1>
+
+                <form>
+                    <div>
+                        <input type="text" id="name" placeholder="// your name" required>
+                        <input type="text" id="email" placeholder="// your e-mail" required>
+                    </div>
+
+                    <div>
+                        <textarea id="message" placeholder="// your message" rows="5" required></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit" id="enviar">Go, go, go!</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
